@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/restaurantImage"
         app:layout_constraintStart_toEndOf="@id/restaurantImage"
-        tools:text="식당 이름"
+        tools:text="가게 이름"
         android:layout_marginStart="12dp"/>
 
     <TextView
@@ -65,12 +65,39 @@
         android:textSize="12sp"
         tools:text="21~36분" />
 
+    <ImageView
+        android:id="@+id/item_bakery_today_reserv_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="0dp"
+        android:src="@drawable/today_reserv"
+        app:layout_constraintTop_toBottomOf="@id/deliveryTimeText"
+        app:layout_constraintStart_toStartOf="@id/deliveryTimeText" />
+
+    <ImageView
+        android:id="@+id/item_bakery_order_reserv_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/order_reserv"
+        app:layout_constraintTop_toBottomOf="@id/deliveryTimeText"
+        app:layout_constraintStart_toEndOf="@id/item_bakery_today_reserv_iv"/>
+
+    <ImageView
+        android:id="@+id/item_bakery_store_sale_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/store_sale"
+        app:layout_constraintBottom_toTopOf="@id/deliveryTipText"
+        app:layout_constraintStart_toEndOf="@id/item_bakery_order_reserv_iv" />
+
     <TextView
         android:id="@+id/deliveryTipText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/deliveryTimeText"
+        app:layout_constraintTop_toBottomOf="@id/item_bakery_today_reserv_iv"
         app:layout_constraintStart_toStartOf="@id/deliveryTimeText"
         tools:text="배달팁 0원~2,700원" />
 

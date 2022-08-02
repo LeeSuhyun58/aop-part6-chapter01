@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/restaurantImage"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        tools:layout_height="274dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
+        android:src="@drawable/image2"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@id/restaurantImage"
+        app:layout_constraintBottom_toTopOf="@+id/txt_StoreInfo_Open"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="영업정보"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="운영시간"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Open_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/restaurantImage"
+        app:layout_constraintStart_toEndOf="@+id/txt_StoreInfo_Open"
+        tools:text="매일 오전 9:00 ~ 오후 10:00"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_Open"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="휴무일"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Close_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_Open_desc"
+        app:layout_constraintStart_toEndOf="@+id/txt_StoreInfo_Close"
+        tools:text="매주 화요일"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_PNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_Close"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="전화번호"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_PNumber_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_Close_desc"
+        app:layout_constraintStart_toEndOf="@+id/txt_StoreInfo_PNumber"
+        tools:text="010-0000-0000"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Locate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_PNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="주소"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Locate_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_PNumber_desc"
+        app:layout_constraintStart_toEndOf="@+id/txt_StoreInfo_Locate"
+        tools:text="서울특별시 강서구 강서로 718-10 1층"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_Locate"
+        app:layout_constraintBottom_toTopOf="@+id/txt_StoreInfo_Name"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="사업자정보"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_Owner"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="상호명"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Name_Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_Owner"
+        app:layout_constraintStart_toEndOf="@+id/txt_StoreInfo_Name"
+        tools:text="(주)니빵내빵"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_Store_Owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_Name"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="대표자명"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_Store_Owner_Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_StoreInfo_Name_Desc"
+        app:layout_constraintStart_toEndOf="@+id/txt_Store_Owner"
+        tools:text="김내빵"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_Store_Owner"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="사업자등록번호"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_StoreInfo_Number_Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_Store_Owner_Desc"
+        app:layout_constraintStart_toEndOf="@+id/txt_StoreInfo_Number"
+        tools:text="000-00-00000"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

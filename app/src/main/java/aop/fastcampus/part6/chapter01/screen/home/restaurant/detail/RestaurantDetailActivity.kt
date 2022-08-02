@@ -11,6 +11,7 @@ import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import aop.fastcampus.part6.chapter01.R
+import aop.fastcampus.part6.chapter01.data.entity.restaurant.RestaurantDetailInfoEntity
 import aop.fastcampus.part6.chapter01.data.entity.restaurant.RestaurantEntity
 import aop.fastcampus.part6.chapter01.data.entity.restaurant.RestaurantFoodEntity
 import aop.fastcampus.part6.chapter01.databinding.ActivityRestaurantDetailBinding
@@ -19,6 +20,7 @@ import aop.fastcampus.part6.chapter01.extensions.load
 import aop.fastcampus.part6.chapter01.screen.MainTabMenu
 import aop.fastcampus.part6.chapter01.screen.base.BaseActivity
 import aop.fastcampus.part6.chapter01.screen.home.restaurant.RestaurantListFragment
+import aop.fastcampus.part6.chapter01.screen.home.restaurant.detail.info.RestaurantDetailInfoFragment
 import aop.fastcampus.part6.chapter01.screen.home.restaurant.detail.menu.RestaurantMenuListFragment
 import aop.fastcampus.part6.chapter01.screen.home.restaurant.detail.review.RestaurantReviewListFragment
 import aop.fastcampus.part6.chapter01.screen.order.OrderMenuListActivity
@@ -170,6 +172,9 @@ class RestaurantDetailActivity : BaseActivity<RestaurantDetailViewModel, Activit
                 RestaurantMenuListFragment.newInstance(
                     restaurantInfoId,
                     ArrayList(restaurantFoodList ?: listOf())
+                ),
+                RestaurantDetailInfoFragment.newInstance(
+                    restaurantInfoId
                 ),
                 RestaurantReviewListFragment.newInstance(
                     restaurantTitle

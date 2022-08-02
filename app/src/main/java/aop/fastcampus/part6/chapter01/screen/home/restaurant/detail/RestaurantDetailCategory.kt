@@ -7,6 +7,6 @@ enum class RestaurantDetailCategory(
     @StringRes val categoryNameId: Int
 ) {
 
-    MENU(R.string.menu), REVIEW(R.string.review)
+    MENU(R.string.menu), DETAILINFO(R.string.detailinfo), REVIEW(R.string.review)
 
 }

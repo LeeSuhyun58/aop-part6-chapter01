@@ -14,7 +14,7 @@ class RestaurantListViewModel(
     private val restaurantCategory: RestaurantCategory,
     private var locationLatLngEntity: LocationLatLngEntity,
     private val restaurantRepository: RestaurantRepository,
-    private var restaurantFilterOrder: RestautantFilterOrder = RestautantFilterOrder.DEFAULT
+    private var restaurantFilterOrder: RestautantFilterOrder = RestautantFilterOrder.Only_Store
 ) : BaseViewModel() {
 
     private var _restaurantListLiveData = MutableLiveData<List<RestaurantModel>>()
@@ -24,17 +24,14 @@ class RestaurantListViewModel(
     override fun fetchData(): Job = viewModelScope.launch {
         val restaurantList = restaurantRepository.getList(restaurantCategory, locationLatLngEntity)
         val sortedList = when (restaurantFilterOrder) {
-            RestautantFilterOrder.DEFAULT -> {
+            RestautantFilterOrder.Only_Store -> {
                 restaurantList
             }
-            RestautantFilterOrder.LOW_DELIVERY_TIP -> {
+            RestautantFilterOrder.Today_Reservation -> {
                 restaurantList.sortedBy { it.deliveryTipRange.first }
             }
-            RestautantFilterOrder.FAST_DELIVERY -> {
+            RestautantFilterOrder.Order_Reservation -> {
                 restaurantList.sortedBy { it.deliveryTimeRange.first }
-            }
-            RestautantFilterOrder.TOP_RATE -> {
-                restaurantList.sortedByDescending { it.grade }
             }
         }
         _restaurantListLiveData.value = sortedList.map {

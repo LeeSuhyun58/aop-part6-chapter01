@@ -7,13 +7,19 @@ enum class RestaurantCategory(
     @StringRes val categoryNameId: Int,
     @StringRes val categoryTypeId: Int
 ) {
-    ALL(R.string.all, R.string.all_type),
-    KOREAN_FOOD(R.string.korean_food, R.string.korean_food_type),
-    DUMPLING_FOOD(R.string.dumpling_food, R.string.dumpling_food_type),
-    CAFE_DESSERT(R.string.cafe_dessert, R.string.cafe_dessert_type),
-    JAPANESE_FOOD(R.string.japanese_food, R.string.japanese_food_type),
-    CHINESE_FOOD(R.string.chinese_food, R.string.chinese_food_type),
-    ASIAN_EUROPE_FOOD(R.string.asian_europe_food, R.string.asian_europe_food_type),
-    FAST_FOOD(R.string.fast_food, R.string.fast_food_type),
-    CHICKEN_PIZZA(R.string.chicken_pizza, R.string.chicken_pizza_type)
+    AllBread(R.string.main, R.string.main_type),
+    Bread1 (R.string.bread1, R.string.bread1_type),
+    Bread2(R.string.bread2, R.string.bread2_type),
+    Bread3(R.string.bread3, R.string.bread3_type),
+    Bread4(R.string.bread4, R.string.bread4_type),
+    Bread5(R.string.bread5, R.string.bread5_type),
+    Bread6(R.string.bread6, R.string.bread6_type),
+    Bread7(R.string.bread7, R.string.bread7_type),
+    Bread8(R.string.bread8, R.string.bread8_type),
+    Bread9(R.string.bread9, R.string.bread9_type),
+    Bread10(R.string.bread10, R.string.bread10_type),
+    Bread11(R.string.bread11, R.string.bread11_type),
+    Bread12(R.string.bread12, R.string.bread12_type),
+    Bread13(R.string.bread13, R.string.bread13_type),
+    Bread14(R.string.bread14, R.string.bread14_type)
 }

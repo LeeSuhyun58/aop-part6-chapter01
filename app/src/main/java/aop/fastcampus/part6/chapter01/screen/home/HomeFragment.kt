@@ -97,22 +97,18 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
             when (checkedId) {
                 R.id.chipDefault -> {
                     chipInitialize.isGone = true
-                    changeRestaurantFilterOrder(RestautantFilterOrder.DEFAULT)
+                    changeRestaurantFilterOrder(RestautantFilterOrder.Only_Store)
                 }
                 R.id.chipInitialize -> {
                     chipDefault.isChecked = true
                 }
-                R.id.chipDeliveryTip -> {
+                R.id.chipToday -> {
                     chipInitialize.isVisible = true
-                    changeRestaurantFilterOrder(RestautantFilterOrder.LOW_DELIVERY_TIP)
+                    changeRestaurantFilterOrder(RestautantFilterOrder.Today_Reservation)
                 }
-                R.id.chipFastDelivery -> {
+                R.id.chipOrder -> {
                     chipInitialize.isVisible = true
-                    changeRestaurantFilterOrder(RestautantFilterOrder.FAST_DELIVERY)
-                }
-                R.id.chipTopRate -> {
-                    chipInitialize.isVisible = true
-                    changeRestaurantFilterOrder(RestautantFilterOrder.TOP_RATE)
+                    changeRestaurantFilterOrder(RestautantFilterOrder.Order_Reservation)
                 }
             }
         }

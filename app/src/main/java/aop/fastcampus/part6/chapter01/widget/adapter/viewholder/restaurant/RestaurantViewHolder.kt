@@ -4,6 +4,7 @@ import aop.fastcampus.part6.chapter01.R
 import aop.fastcampus.part6.chapter01.databinding.ViewholderRestaurantBinding
 import aop.fastcampus.part6.chapter01.extensions.clear
 import aop.fastcampus.part6.chapter01.extensions.load
+import aop.fastcampus.part6.chapter01.model.BreadStore
 import aop.fastcampus.part6.chapter01.model.restaurant.RestaurantModel
 import aop.fastcampus.part6.chapter01.screen.base.BaseViewModel
 import aop.fastcampus.part6.chapter01.util.provider.ResourcesProvider

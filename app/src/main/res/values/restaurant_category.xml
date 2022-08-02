@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="all">전체</string>
-    <string name="korean_food">한식</string>
-    <string name="dumpling_food">분식</string>
-    <string name="cafe_dessert">카페 디저트</string>
-    <string name="japanese_food">일식•돈까스•회</string>
-    <string name="chinese_food">중식</string>
-    <string name="asian_europe_food">아시안•양식</string>
-    <string name="fast_food">패스트푸드</string>
-    <string name="chicken_pizza">치킨•피자</string>
+    <string name="main">전체</string>
+    <string name="bread1">비건</string>
+    <string name="bread2">샌드위치</string>
+    <string name="bread3">크루아상</string>
+    <string name="bread4">베이글</string>
+    <string name="bread5">파이</string>
+    <string name="bread6">와플</string>
+    <string name="bread7">케이크</string>
+    <string name="bread8">마카롱</string>
+    <string name="bread9">호밀빵</string>
+    <string name="bread10">도넛</string>
+    <string name="bread11">소금빵</string>
+    <string name="bread12">고로케</string>
+    <string name="bread13">스콘</string>
+    <string name="bread14">쿠키</string>
 
-    <string name="all_type">식당</string>
-    <string name="korean_food_type">한식</string>
-    <string name="dumpling_food_type">분식</string>
-    <string name="cafe_dessert_type">카페;디저트</string>
-    <string name="japanese_food_type">일식;돈까스;회</string>
-    <string name="chinese_food_type">중식</string>
-    <string name="asian_europe_food_type">아시안;양식</string>
-    <string name="fast_food_type">패스트푸드</string>
-    <string name="chicken_pizza_type">치킨;피자</string>
+    <string name="main_type">전체</string>
+    <string name="bread1_type">비건</string>
+    <string name="bread2_type">샌드위치</string>
+    <string name="bread3_type">크루아상</string>
+    <string name="bread4_type">베이글</string>
+    <string name="bread5_type">파이</string>
+    <string name="bread6_type">와플</string>
+    <string name="bread7_type">케이크</string>
+    <string name="bread8_type">마카롱</string>
+    <string name="bread9_type">호밀빵</string>
+    <string name="bread10_type">도넛</string>
+    <string name="bread11_type">소금빵</string>
+    <string name="bread12_type">고로케</string>
+    <string name="bread13_type">스콘</string>
+    <string name="bread14_type">쿠키</string>
 
 </resources>
